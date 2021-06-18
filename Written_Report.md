@@ -35,11 +35,20 @@ Advantages of doing so are following:
 In conclusion, I believe the solution above is a good practice of spending few second to save much more time.
 
 ## Results
--	What are two conclusions you can draw about the Outcomes based on Launch Date?
--	What can you conclude about the Outcomes based on Goals?
--	What are some limitations of this dataset?
--	What are some other possible tables and/or graphs that we could create?
-
+- **What are two conclusions you can draw about the Outcomes based on Launch Date?**
+  - Campaigns launched in May and June have significant higher rate of success than other months. But then we see the a down trend of success right after and reached similar amount with April. This outcome might be affected by the fact that there are more total numbers of campaign launched in May and June than other months.
+  - The numbers of failed campaign launched in May and June are also slightly higher than other months. In addition, October also has a slightly higher number of failed cases.
+  If Louise launch campaign during May or June, there might be a bigger chance to success, but other factors need to be considered.
+- **What can you conclude about the Outcomes based on Goals?**
+  - From above percentage, we can see an overall trend that higher goals lead to a lower success rate and lower goals lead to a higher success rate. In another word, goal and success rate is negative correlated.
+Louise may consider listing her campaign with a reasonable goal and avoid setting an extreme high goal.
+- **What are some limitations of this dataset?**
+  1.  This dataset is solely focused on parent category “Theater” and subcategory “Plays”, it might be helpful to conduct a thorough analysis in other categories   and examine other possible trends as well. Different categories may still have similar trends.
+  2.  This analysis does not focus on one single country as a launching location. Different markets may contain significantly different fund-raising behavior. Louise should decide on a market then conduct another analysis of that market.
+  3.  This report includes outcomes only based on “Launch Date” and “Goals”, however, there are many factors in the original data that could affect decision. For example, is duration a key to success? Is longer duration the reason why some campaign succeeded? Does the trend change year over year? Are theater campaigns more popular in 2015 than in 2016? There are many other factors worth to explore. 
+- **What are some other possible tables and/or graphs that we could create?**
+  1.  For above limitations, we can create trend charts on other categories or subcategories, same outcome charts of different markets, and a success rate vs. duration table/graphs. In addition, for the same months, especially for peak months (May and June), we can create and compare tables and graphs of same period in different years to conclude whether peak months take place in same months every year.
+  2.  A box and whisker plot or a table of IQR can be create on goals of successfully funded plays to examine outliers. 
 
 
 
