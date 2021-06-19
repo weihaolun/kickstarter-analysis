@@ -1,20 +1,32 @@
 # Kickstarting with Excel
 
-## Overview of Project
-The dataset 
-(remember to insert link to excel file)
+## I. Overview of Project
+Louise is planning to launch her play campaign _“Fever”_ on Kickstarter crowdfunding platform. We need to help her to conduct variety trend analysis on Kickstarter campaign [dataset](https://github.com/weihaolun/kickstarter-analysis/blob/d468114fb10abc7cadd8638a2e20543b9ebc9fe5/Kickstarter_Challenge.xlsx) and provide suggestions based on the findings.
+The dataset includes raw data of 4113 campaigns. In order to conduct further analysis for this project, we have completed following adjustment to the dataset:
+1.	Added filters to the dataset so that campaigns can be correctly categorized and subcategorized.
+2.	Converted Unix Timestamps to readable format so that we can clearly filter data by years and months.
+3.	Created pivot tables to summarize category and subcategory data. This step is useful for overall analysis and data auditing.
+
 ### Purpose
-Analyze Kickstarter data to explore variety of trends.
-This report will focus on:
+Analyze Kickstarter data to explore the **relationship between outcomes and launch time** and **relationship between outcomes and goals** to provide Louise more insight of proper timing and goal to launch her pay Fever.
+
+This report includes analysis focused on:
 1.	parent category *Theatre* outcomes based on launch date
 2.	subcategory *Plays* outcomes based on goal.
 
-## Analysis and Challenges
+## II. Analysis and Challenges
 ### Analysis of Outcomes Based on Launch Date
+  In order to analyze the relationship between outcomes and launch date, we created another pivot table to match outcomes with months. We chose _Parent Category_ and _Years_ as filters, _Launch Date_ (group to show months only) as row, and _Outcomes_ as column and value.
+  
+  After setting _Theater_ as the parent category, we will see a table to show the numbers of campaigns succeeded, failed and canceled launched in each month under “Theater” category. Next, we created a line chart (as shown below) to see the trend between each type of outcomes and months.
+
 ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/84211948/122508235-56529580-cf9d-11eb-81ac-d506fe7b7a6e.png)
 
 ### Analysis of Outcomes Based on Goals
+  In this analysis, we focused on the subcategory of “_Plays_”. First, we broke down the goals of all plays into 12 ranges. Then used ```COUNTIFS``` function to count the numbers of campaigns succeeded, failed and canceled within each goal range. Next, we calculated percentage successful, percentage failed, and percentage canceled using above numbers. For the last step, a line chart (as shown below) was created to suggest relationships between goal ranges and percentage of each type of outcome.
+
 ![Outcomes_vs_Goals](https://user-images.githubusercontent.com/84211948/122508247-5b174980-cf9d-11eb-9590-7810d5e73158.png)
+
 
 ### Challenges and Difficulties Encountered
 1.	It is always a good practice to ensure the correctness of the data and result by double checking other charts, table or worksheet. There are a large number of categories and subcategories, it is essential to ensure all the factors and filters are selected correctly. I encountered once where the data didn’t match between sheets, I double checked and made necessary corrections on filters and ensured the sufficiency of results.
@@ -34,7 +46,7 @@ Advantages of doing so are following:
 
 In conclusion, I believe the solution above is a good practice of spending few second to save much more time.
 
-## Results
+## III. Results
 - **What are two conclusions you can draw about the Outcomes based on Launch Date?**
   - Campaigns launched in May and June have significant higher rate of success than other months. But then we see the a down trend of success right after and reached similar amount with April. This outcome might be affected by the fact that there are more total numbers of campaign launched in May and June than other months.
   - The numbers of failed campaign launched in May and June are also slightly higher than other months. In addition, October also has a slightly higher number of failed cases.
