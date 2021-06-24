@@ -2,7 +2,7 @@
 
 ## I. Overview of Project
 Louise is planning to launch her play project _“Fever”_ on Kickstarter crowdfunding platform. We need to help her to conduct variety trending analysis on Kickstarter projects [dataset](https://github.com/weihaolun/kickstarter-analysis/blob/d468114fb10abc7cadd8638a2e20543b9ebc9fe5/Kickstarter_Challenge.xlsx) and provide her suggestions based on the findings.
-The dataset includes raw data of 4113 launched projects. In order to conduct further analysis for this project, I have completed following adjustments to the dataset:
+The dataset includes raw data of 4113 launched campaigns. In order to conduct further analysis for this project, I have completed following adjustments to the dataset:
 1.	Added filters to the dataset so that projects can be correctly categorized and subcategorized.
 2.	Converted Unix Timestamps to readable format so that we can clearly filter data by years and months.
 3.	Created pivot tables to summarize category and subcategory data. This step is useful for overall analysis and data auditing.
@@ -33,6 +33,8 @@ This report includes analysis focused on:
   For the last step, a line graph (as shown below) was created to suggest relationships between goal ranges and percentage of each type of outcomes.
 
 ![Outcomes_vs_Goals](https://user-images.githubusercontent.com/84211948/123181382-e7f05600-d428-11eb-8d90-cdfe21d20057.png)
+
+_Note: All tables and graphs can be found in attached [dataset](https://github.com/weihaolun/kickstarter-analysis/blob/main/Kickstarter_Challenge.xlsx)._
 
 ### Challenges and Difficulties Encountered
 1.	It is always a good practice to audit the data and result by double checking with other graphs, tables or worksheets within the dataset. There is a large number of categories and subcategories, it is essential to ensure all the factors and filters are selected correctly. I encountered once where the data didn’t match between sheets, I double checked and made necessary corrections on filters to ensure the accuracy of results.
